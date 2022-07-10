@@ -1,0 +1,112 @@
+$Dark_g: hsl(158, 36%, 37%);
+$Cream: hsl(30, 38%, 92%);
+
+
+
+$dark: hsl(212, 21%, 14%);
+$Dark_grayish: hsl(228, 12%, 48%);
+$White: hsl(0, 0%, 100%);
+$rosa:#f2e9e2;
+
+$margen:1rem;
+
+html{
+    box-sizing: border-box;
+    font-size:62,5%;
+
+}
+
+body {
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section{
+    
+    height:100vh;
+    background-color:$rosa;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.card{
+    width: 600px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr;
+    border-radius: 3%;
+    overflow: hidden;
+
+    
+}
+
+.card-image{
+    width: 300px;
+    height: 450px;
+    
+}
+
+.card-text{
+    width: 300px;
+    height: 450px;
+    background-color: $White;
+    
+}
+
+h1{
+    font-size:2rem;
+    margin-left: $margen;
+    font-family: 'Fraunces', serif;
+    font-size: 2.1rem;
+    
+}
+    
+    
+
+
+p{
+    font-size: 1rem;
+    margin-left: $margen; 
+    color: $Dark_grayish;
+    font-family: 'Fraunces', serif;
+    font-size: $margen;
+    
+    
+
+
+    &.izda{
+        float: left;
+        font-family: 'Fraunces', serif;
+        font-size:1.7rem;
+        color: $Dark_g;
+        font-weight: bolder;
+        margin-top:5px ;
+    }
+
+    &.dcha{
+        float: right;
+        font-size:1rem;
+        margin-top: 15px;
+        margin-right: 2rem;
+        text-decoration:line-through;
+    }
+}
+
+
+
+.btn{
+    width: 250px;
+    height: 40px;
+    background-color: $Dark_g;
+    color: $White;
+    margin-left: $margen;
+    padding: 2px;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+
+
+
+
