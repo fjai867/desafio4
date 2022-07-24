@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
 $Dark_g: hsl(158, 36%, 37%);
 $Cream: hsl(30, 38%, 92%);
 
@@ -11,14 +13,18 @@ $rosa:#f2e9e2;
 $margen:1rem;
 
 html{
+    margin:0;
+    padding:0;
     box-sizing: border-box;
-    font-size:62,5%;
+    
 
 }
 
 body {
-    font-family: 'Fraunces', serif;
+    //font-family: 'Fraunces', serif;
     font-family: 'Montserrat', sans-serif;
+    font-size:62,5%;
+
 }
 
 section{
@@ -67,11 +73,11 @@ h1{
 
 
 p{
-    font-size: 1rem;
+    
     margin-left: $margen; 
     color: $Dark_grayish;
     font-family: 'Fraunces', serif;
-    font-size: $margen;
+    font-size: 0.9rem;
     
     
 
@@ -92,21 +98,77 @@ p{
         margin-right: 2rem;
         text-decoration:line-through;
     }
+        
+    &.card-text-encab{
+        letter-spacing: 3px;
+    }
+
 }
 
 
 
 .btn{
-    width: 250px;
-    height: 40px;
+    width: 235px;
+    height: 48px;
     background-color: $Dark_g;
     color: $White;
-    margin-left: $margen;
     padding: 2px;
+    border:none;
     border-radius: 0.6rem;
     cursor: pointer;
+    display:block;
+    margin:auto;
 }
 
+.btn:hover{
+  background-color: rgb(5, 36, 5);  
+}
 
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a{
+     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 700px) {
+    .card{
+        width: 345px;
+        height: 612px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr;
+        border-radius: 3%;
+        margin:25px auto 25px;
+        
+    
+        
+    }
+
+     .card-image{
+        content:url("./images/image-product-mobile.jpg");
+        width: 344px;
+        height: 281px;
+    }
+
+    .card-text{
+        width: 343px;
+        height: 373px;
+    }
+    h1{
+        margin-top: -15px;
+        
+    }
+
+    
+
+    .btn{
+        margin-top:-20px;
+    }
+    
+    
+
+}
 
 
